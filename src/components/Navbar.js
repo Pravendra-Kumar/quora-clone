@@ -1,14 +1,14 @@
 import React from 'react'
-import '../css/Navbar.css'
-import HomeIcon from '@mui/icons-material/Home';
-import FeaturedPlayListOutlinedIcon from '@mui/icons-material/FeaturedPlayListOutlined';
-import AssignmentTurnedInOutlinedIcon from '@mui/icons-material/AssignmentTurnedInOutlined';
-import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
-import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
-import Search from '@mui/icons-material/Search';
-import Language from '@mui/icons-material/Language';
-import {Button} from "@mui/material"
-import { Avatar } from '@mui/material'
+import './Navbar.css'
+import HomeIcon from '@material-ui/icons/Home';
+import FeaturedPlayListOutlinedIcon from '@material-ui/icons/FeaturedPlayListOutlined';
+import AssignmentTurnedInOutlinedIcon from '@material-ui/icons/AssignmentTurnedInOutlined';
+import PeopleAltOutlinedIcon from '@material-ui/icons/PeopleAltOutlined';
+import NotificationsOutlinedIcon from '@material-ui/icons/NotificationsOutlined';
+import Search from '@material-ui/icons/Search';
+import Language from '@material-ui/icons/Language';
+import {Button} from "@material-ui/core"
+import { Avatar } from '@material-ui/core'
 
 function Navbar() {
   return (

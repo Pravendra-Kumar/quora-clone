@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/WidgetOptions.css'
+import './WidgetOptions.css'
 
 function WidgetOptions() {
   return (

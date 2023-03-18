@@ -1,6 +1,6 @@
-import { Avatar } from '@mui/material'
+import { Avatar } from '@material-ui/core'
 import React from 'react'
-import '../css/QouraBox.css'
+import './QouraBox.css'
 function QuoraBox() {
   return (
     <div className='quoraBox'>

@@ -1,0 +1,49 @@
+.register{
+    background-color:rgba(255, 255, 255, 0.904);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+
+}
+.register__conatainer{
+width: 300px;
+height:300px;
+left: 50%;
+top:50%;
+transform: translate(-50%, -50%);
+background: lightgrey;
+position: absolute;
+text-align: center;
+border-radius: 10px;
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    background: white;
+    border: 1px solid grey;
+}
+.register__img {
+    margin-top: 20px;
+ padding: 30px auto;
+}
+.register__img > img {
+ width: 60%;
+}
+
+p{
+    color: rgb(18, 83, 18);
+}
+register > h3{
+    color: rgba(0, 0, 0, 0.717);
+}
+.btn{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+input[type="text"],
+input[type="password"]{
+    padding: 10px;
+}

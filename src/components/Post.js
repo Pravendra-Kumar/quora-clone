@@ -1,12 +1,12 @@
-import { Avatar } from '@mui/material'
+import { Avatar } from '@material-ui/core'
 import React from 'react'
-import '../css/Post.css'
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import RepeatIcon from '@mui/icons-material/Repeat';
-import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import ShareIcon from '@mui/icons-material/Share';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import './Post.css'
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import RepeatIcon from '@material-ui/icons/Repeat';
+import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
+import ShareIcon from '@material-ui/icons/Share';
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
 function Post() {
   return (
