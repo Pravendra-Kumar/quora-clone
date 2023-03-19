@@ -9,8 +9,13 @@ import Search from '@material-ui/icons/Search';
 import Language from '@material-ui/icons/Language';
 import {Button} from "@material-ui/core"
 import { Avatar } from '@material-ui/core'
+import { useState } from 'react';
+import Modal from 'react-modal';
 
 function Navbar() {
+
+  const [openModal, setOpenModal]= useState(false);
+
   return (
     <div className='qHeader'>
       <div className='qHeader__logo'>
@@ -32,7 +37,37 @@ function Navbar() {
                 <Avatar sx={{ width: 30, height: 30 }} />
             </div>
             <Language />
-            <Button>Add Question</Button>
+            <Button onClick={()=>setOpenModal(true)}>Add Question</Button>
+
+            <Modal
+            isOpen={openModal}
+            onRequestClose={()=>setOpenModal(false)}
+            shouldCloseOnOverlayClick={false}
+            style={{
+            overlay: {
+              width: 700,
+              height: 590,
+              backgroundColor: "rgba(0,0,0,0.8)",
+              zIndex: "1000",
+              top: "50%",
+              left: "50%",
+              marginTop: "-300px",
+              marginLeft: "-350px",
+            },
+          }}
+            >
+            <div className='modal__title'>
+               
+               <div className='modal__info'>
+                 <Avatar  className="Avatar"/>
+                 <p>UseName</p>
+               </div>
+               <h5>Add Question</h5>
+               <div className='close'>  <button onClick={()=>setOpenModal(false)}>Close</button></div>
+               
+             </div>
+                
+            </Modal>
       </div>
     </div>
   )
