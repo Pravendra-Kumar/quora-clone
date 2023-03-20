@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import "./Login.css"
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const initialData = {
         username: '',
         password: '',
     }
+    const navigate = useNavigate();
 
     //state object for formdata
     const [loginformdata, setFormdata] = useState(initialData);
@@ -41,6 +43,8 @@ const Login = () => {
                         console.log('Inside 2nd if - ', i)
                         setStatus(true);
                         //set context varibale
+                        navigate('/quora')
+
                     }
                 }
             }

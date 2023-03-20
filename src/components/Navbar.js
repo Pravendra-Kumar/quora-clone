@@ -22,7 +22,7 @@ function Navbar() {
              <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Quora_logo_2015.svg/330px-Quora_logo_2015.svg.png' alt=''/>
       </div>
       <div className='qHeader__icons'>
-            <div className='qHeader__icon'><HomeIcon/></div>
+            <div className='qHeader__icon active' ><HomeIcon/></div>
             <div className='qHeader__icon'><FeaturedPlayListOutlinedIcon/></div>
             <div className='qHeader__icon'><AssignmentTurnedInOutlinedIcon/></div>
             <div className='qHeader__icon'><PeopleAltOutlinedIcon/></div>
@@ -34,7 +34,7 @@ function Navbar() {
       </div>
       <div className='qHaeder__Rem'>
             <div className='qHeader__avatar'>
-                <Avatar sx={{ width: 30, height: 30 }} />
+                <Avatar sx={{ width: 20, height: 20 }} />
             </div>
             <Language />
             <Button onClick={()=>setOpenModal(true)}>Add Question</Button>

@@ -1,5 +1,6 @@
 .sidebar{
     margin-right: 10px;
-    flex: 0.2;
+    /* flex: 0.2; */
+    width: 15vw;
 
 }

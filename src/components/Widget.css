@@ -1,5 +1,6 @@
 .widget {
     flex: 0.2;
+    /* width: 20vw; */
     margin-left: 20px;
     display: flex;
     flex-direction: column;

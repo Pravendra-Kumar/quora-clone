@@ -1,26 +1,38 @@
-import React from 'react'
+import React, { useState } from "react";
 import './index.css'
 import "./App.css";
-import Quora from './components/Quora.js'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Register from './auth/Register';
 import Login from "./auth/Login";
+import Store from './app/Store';
+import Quora from "./components/Quora";
+
 
 const App = () => {
 
+  const[login, setLogin]= useState(false)
+  const props = { login: login, setLogin: setLogin };
 
   return (
+    <>
+    
     <BrowserRouter>
-            <div className="App">
-            <Quora/>
+          
+           <div className="App">
+           <Store data={props}/>
             <Routes>
-                 <Route path="/" element={<Quora/>}/>
-                 <Route path="/register" element={<Register/>}/>
+                 <Route path="/" element={<Login/> }/>
                  <Route path="/login" element={<Login/>}/>
+                 <Route path="/register" element={<Register/>}/>
+                 <Route path="/quora" element={<Quora/>}/>
+
+                
             </Routes>
                 
-            </div>
+          </div>
+          
     </BrowserRouter>
+    </>
   )
 }
 

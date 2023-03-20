@@ -12,13 +12,13 @@ function Post() {
   return (
     <div className='post'>
        <div className='post__info'>
-           <Avatar sx={{ width: 30, height: 30 }}/>
-           <h5>Usename</h5>
-           <small>Timestamp</small>
+           <Avatar sx={{ width: 25, height: 25 }}/>
+           <h5>Sk Sharma</h5>
+           <small>12.0PM 2 weaks Ago</small>
        </div>
        <div className='post__body'>
             <div className='post__question'>
-               <p>Question</p>
+               <p>How to Apply ATM Card?</p>
                <button className='post__btnAnswer'>Answer</button>
             </div>
             <div className='post__answer'>
@@ -28,7 +28,9 @@ function Post() {
        </div>
        <div className='post__footer'>
            <div className='post__footerAction'>
-                <ArrowUpwardIcon/>
+
+
+                28<ArrowUpwardIcon/>
                 <ArrowDownwardIcon/>
            </div>
            <RepeatIcon/>
